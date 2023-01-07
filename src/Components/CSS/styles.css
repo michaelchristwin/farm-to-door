@@ -13,12 +13,19 @@
   height: 10px !important;
   border-radius: 50%;
   background-color: #ccc;
-  position: relative !important;
-  margin-top: 40px;
 }
-.carousel-indicators :active {
-  background-color: #333 !important;
+.carousel-indicators .active {
+  background-color: white !important;
 }
-.active-indicator {
-  background-color: #333;
+.wrect {
+  height: 400px;
+  width: 279px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+.brand {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  line-height: 48px;
+  font-weight: 700;
+  font-size: 36px;
 }

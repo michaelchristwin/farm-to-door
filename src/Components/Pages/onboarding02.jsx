@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import FarmTo from "../img/farmtodoor.png";
 import "../CSS/styles.css";
 
-function Onboarding() {
+function Onboarding02() {
   return (
     <main className="d-flex">
       <div className="car bg-dark">
@@ -39,4 +39,4 @@ function Onboarding() {
   );
 }
 
-export default Onboarding;
+export default Onboarding02;

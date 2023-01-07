@@ -1,11 +1,12 @@
 import Splash from "./Pages/splash";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Onboarding from "./Pages/onboarding";
+import Onboarding02 from "./Pages/onboarding02";
+import Onboarding01 from "./Pages/onboarding01";
 
 function App() {
   return (
     <main>
-      <Onboarding />
+      <Onboarding01 />
     </main>
   );
 }
