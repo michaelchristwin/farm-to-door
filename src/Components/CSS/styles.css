@@ -35,10 +35,10 @@
   font-size: 18px;
   line-height: 30px;
 }
-#get {
+.get {
   background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%) !important;
-  border-radius: 50px;
+  border-radius: 50px !important;
   width: 320px;
   height: 54px;
-  color: white;
+  color: white !important;
 }

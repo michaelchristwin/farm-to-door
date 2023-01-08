@@ -13,10 +13,8 @@ function Onboarding01() {
         <span className="d-block groc">
           groceries you desire delivered to you.
         </span>
+        <button className="btn mt-5 get">Get Started</button>
       </div>
-      <button className="btn" id="get">
-        Get Started
-      </button>
     </main>
   );
 }
