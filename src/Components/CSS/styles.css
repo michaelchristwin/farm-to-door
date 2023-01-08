@@ -29,3 +29,16 @@
   font-weight: 700;
   font-size: 36px;
 }
+.groc {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+#get {
+  background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%) !important;
+  border-radius: 50px;
+  width: 320px;
+  height: 54px;
+  color: white;
+}
