@@ -12,10 +12,10 @@
   width: 10px !important;
   height: 10px !important;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: black !important;
 }
 .carousel-indicators .active {
-  background-color: white !important;
+  background-color: #52a933 !important;
 }
 .wrect {
   height: 400px;

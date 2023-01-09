@@ -1,5 +1,7 @@
 import Wrect from "../img/wrect.png";
 import "../CSS/styles.css";
+import { Link } from "react-router-dom";
+import BaseUrl from "../JSX/BaseUrl";
 
 function Onboarding01() {
   return (
@@ -13,7 +15,9 @@ function Onboarding01() {
         <span className="d-block groc">
           groceries you desire delivered to you.
         </span>
-        <button className="btn mt-5 get">Get Started</button>
+        <button className="btn mt-5 get">
+          <Link to={`${BaseUrl}/onboarding2`}>Get Started</Link>
+        </button>
       </div>
     </main>
   );
