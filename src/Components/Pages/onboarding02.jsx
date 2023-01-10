@@ -19,7 +19,7 @@ function Onboarding02() {
           </Carousel.Item>
         </Carousel>
         <button className="btn mt-5 get mx-auto">
-          <Link to={`${BaseUrl}/onboarding2`}>Get Started</Link>
+          <Link to={`${BaseUrl}/login`}>Get Started</Link>
         </button>
       </div>
     </main>

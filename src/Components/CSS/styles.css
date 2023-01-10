@@ -42,3 +42,26 @@
   height: 54px;
   color: white !important;
 }
+.log-t {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+.top-l {
+  width: 56px;
+  height: 55px;
+}
+.logo-div {
+  justify-content: right;
+}
+#email {
+  margin-left: auto;
+  margin-right: auto;
+  width: 335px;
+  height: 50px;
+  border-radius: 50px;
+  border-color: #62d23a;
+}
+.form {
+}
