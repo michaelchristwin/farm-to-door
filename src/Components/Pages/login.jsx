@@ -1,5 +1,7 @@
 import "../CSS/styles.css";
 import Farmtodoor from "../img/farmtodoor.png";
+import { Link } from "react-router-dom";
+import BaseUrl from "../JSX/BaseUrl";
 
 function Login() {
   return (
@@ -12,9 +14,18 @@ function Login() {
         <input
           type="text"
           className="form-control"
-          id="email"
+          id="input"
           placeholder="Email"
         />
+        <input
+          type="text"
+          className="form-control mt-4"
+          id="input"
+          placeholder="Password"
+        />
+        <button className="btn mt-5 log-btn d-block">
+          <Link to={`${BaseUrl}/login`}>Login</Link>
+        </button>
       </div>
     </main>
   );

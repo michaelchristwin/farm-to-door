@@ -40,7 +40,10 @@
   border-radius: 50px !important;
   width: 320px;
   height: 54px;
-  color: white !important;
+}
+.get a {
+  color: white;
+  text-decoration: none;
 }
 .log-t {
   font-family: "Rubik";
@@ -55,7 +58,7 @@
 .logo-div {
   justify-content: right;
 }
-#email {
+#input {
   margin-left: auto;
   margin-right: auto;
   width: 335px;
@@ -63,5 +66,15 @@
   border-radius: 50px;
   border-color: #62d23a;
 }
-.form {
+.log-btn {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%) !important;
+  border-radius: 50px !important;
+  width: 320px;
+  height: 54px;
+}
+.log-btn a {
+  color: white;
+  text-decoration: none;
 }
