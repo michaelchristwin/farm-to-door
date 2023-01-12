@@ -2,6 +2,7 @@ import "../CSS/styles.css";
 import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
 import GLogo from "../img/google.png";
+import Apple from "../img/apple.png";
 
 function CreateAcount() {
   return (
@@ -38,6 +39,12 @@ function CreateAcount() {
         <span className="cont-g">
           <img src={GLogo} alt="google logo" className="g-logo me-5" /> Continue
           with Google
+        </span>
+      </div>
+      <div className="google d-block p-2 mt-2">
+        <span className="cont-g">
+          <img src={Apple} alt="google logo" className="g-logo me-5" /> Continue
+          with Apple
         </span>
       </div>
     </main>
