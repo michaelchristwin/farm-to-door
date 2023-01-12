@@ -104,3 +104,18 @@
   font-size: 18px;
   line-height: 30px;
 }
+#digit {
+  border-radius: 45%;
+  height: 50px;
+  width: 60px;
+  border-color: #62d23a;
+}
+.resend {
+  color: #62d23a;
+}
+.code {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -31,19 +31,19 @@ function CreateAcount() {
           placeholder="Confirm Password"
         />
         <button className="btn mt-5 log-btn d-block">
-          <Link to={`${BaseUrl}/login`}>Create Account</Link>
+          <Link to={`${BaseUrl}/verify-email`}>Create Account</Link>
         </button>
       </div>
       <span className="d-block text-center my-4">or</span>
       <div className="google d-block p-2">
-        <span className="cont-g">
-          <img src={GLogo} alt="google logo" className="g-logo me-5" /> Continue
+        <span className="cont-g d-block py-2">
+          <img src={GLogo} alt="google logo" className="g-logo mx-4" /> Continue
           with Google
         </span>
       </div>
       <div className="google d-block p-2 mt-2">
-        <span className="cont-g">
-          <img src={Apple} alt="google logo" className="g-logo me-5" /> Continue
+        <span className="cont-g d-block py-2">
+          <img src={Apple} alt="google logo" className="g-logo mx-4" /> Continue
           with Apple
         </span>
       </div>
