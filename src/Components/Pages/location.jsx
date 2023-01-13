@@ -24,7 +24,7 @@ function TheLocation() {
         <span className="ms-3 mt-2 d-block inside">Choose your store</span>
       </div>
       <button className="btn mt-5 log-btn d-block">
-        <Link to={`${BaseUrl}location`}>Start Shopping</Link>
+        <Link to={`${BaseUrl}/location2`}>Start Shopping</Link>
       </button>
     </main>
   );

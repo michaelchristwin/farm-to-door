@@ -9,6 +9,7 @@ import CreateAcount from "./Pages/create_account";
 import EmailVerify from "./Pages/email_verify";
 import TheLocation from "./Pages/location";
 import Location02 from "./Pages/location02";
+import ForgotPassword from "./Pages/forgot_password";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
         <Route path={`${BaseUrl}/verify-email`} element={<EmailVerify />} />
         <Route path={`${BaseUrl}/location`} element={<TheLocation />} />
         <Route path={`${BaseUrl}/location2`} element={<Location02 />} />
+        <Route
+          path={`${BaseUrl}/forgot-password`}
+          element={<ForgotPassword />}
+        />
       </Routes>
     </main>
   );
