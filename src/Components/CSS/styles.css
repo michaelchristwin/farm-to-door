@@ -119,3 +119,13 @@
   font-size: 18px;
   line-height: 30px;
 }
+.lftd {
+  width: 110px;
+  height: 110px;
+}
+.set-loc {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
