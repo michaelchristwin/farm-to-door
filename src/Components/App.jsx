@@ -8,6 +8,7 @@ import Login from "./Pages/login";
 import CreateAcount from "./Pages/create_account";
 import EmailVerify from "./Pages/email_verify";
 import TheLocation from "./Pages/location";
+import Location02 from "./Pages/location02";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path={`${BaseUrl}/create-account`} element={<CreateAcount />} />
         <Route path={`${BaseUrl}/verify-email`} element={<EmailVerify />} />
         <Route path={`${BaseUrl}/location`} element={<TheLocation />} />
+        <Route path={`${BaseUrl}/location2`} element={<Location02 />} />
       </Routes>
     </main>
   );
