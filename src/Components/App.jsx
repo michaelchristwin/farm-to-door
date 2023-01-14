@@ -10,6 +10,7 @@ import EmailVerify from "./Pages/email_verify";
 import TheLocation from "./Pages/location";
 import Location02 from "./Pages/location02";
 import ForgotPassword from "./Pages/forgot_password";
+import ForgotPassword2 from "./Pages/forgot_password2";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Route
           path={`${BaseUrl}/forgot-password`}
           element={<ForgotPassword />}
+        />
+        <Route
+          path={`${BaseUrl}/forgot-password2`}
+          element={<ForgotPassword2 />}
         />
       </Routes>
     </main>

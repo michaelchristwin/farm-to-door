@@ -5,13 +5,12 @@ function ForgotPassword() {
   return (
     <main className="px-2">
       <p className="log-t mt-4">Forgot Password</p>
-      <span className="indi2 d-block">
-        We will send an email with a confirmation code
+      <span className="indi2 d-block text-left">
+        We will send an email with a confirmation code to this number.
       </span>
-      <span className="indi2 d-block">to this number.</span>
       <input
         type="email"
-        className="form-control mt-4"
+        className="form-control email-fp"
         id="input"
         placeholder="Email"
       />
