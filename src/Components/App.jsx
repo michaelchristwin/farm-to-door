@@ -12,6 +12,7 @@ import Location02 from "./Pages/location02";
 import ForgotPassword from "./Pages/forgot_password";
 import ForgotPassword2 from "./Pages/forgot_password2";
 import ForgotPassword3 from "./Pages/forgot_password3";
+import Home from "./Pages/home";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           path={`${BaseUrl}/forgot-password3`}
           element={<ForgotPassword3 />}
         />
+        <Route path={`${BaseUrl}/home`} element={<Home />} />
       </Routes>
     </main>
   );
