@@ -11,6 +11,7 @@ import TheLocation from "./Pages/location";
 import Location02 from "./Pages/location02";
 import ForgotPassword from "./Pages/forgot_password";
 import ForgotPassword2 from "./Pages/forgot_password2";
+import ForgotPassword3 from "./Pages/forgot_password3";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
         <Route
           path={`${BaseUrl}/forgot-password2`}
           element={<ForgotPassword2 />}
+        />
+        <Route
+          path={`${BaseUrl}/forgot-password3`}
+          element={<ForgotPassword3 />}
         />
       </Routes>
     </main>
