@@ -204,3 +204,20 @@ body {
   height: 50px;
   width: 50px;
 }
+.strawberry {
+  width: 136px;
+  height: 97px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-name {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.product {
+  width: 160px;
+  height: 226px;
+  border-radius: 20px;
+}
