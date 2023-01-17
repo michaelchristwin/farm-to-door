@@ -207,8 +207,6 @@ body {
 .strawberry {
   width: 136px;
   height: 97px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .product-name {
   font-family: "Rubik";
@@ -220,4 +218,34 @@ body {
   width: 160px;
   height: 226px;
   border-radius: 20px;
+}
+.type {
+  color: #707280;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price {
+  color: #52a933;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.cart {
+  height: 40px;
+  width: 40px;
+}
+.avacado {
+  height: 90px;
+  width: 90px;
+}
+.brocolli {
+  width: 119px;
+  height: 97px;
+}
+.orange {
+  width: 112px;
+  height: 97px;
 }
