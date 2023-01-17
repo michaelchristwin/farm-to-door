@@ -170,7 +170,7 @@
 }
 .home-lg {
   width: 70px;
-  height: 60px;
+  height: 65px;
 }
 .groc {
   font-family: "Rubik";
@@ -180,4 +180,27 @@
 }
 body {
   background-color: #f6f7f9 !important;
+}
+.srch {
+  width: 273px !important;
+  height: 50px;
+  border-radius: 10px !important;
+  font-family: Helvetica;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.kili {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+}
+.arrow {
+  height: 13px;
+  width: 10px;
+}
+.filter {
+  height: 50px;
+  width: 50px;
 }

@@ -1,21 +1,28 @@
 import FarmToDoor from "../img/farmtodoor.png";
+import "../CSS/styles.css";
+import Arrow from "../img/arrow.png";
+import Filter from "../img/filter.png";
 
 function Home() {
   return (
     <main className="home">
-      <div className="d-flex justify-content-between px-2 shadow">
+      <div className="d-flex justify-content-between px-2 bg-white">
         <img src={FarmToDoor} alt="logo" className="home-lg" />
         <p className="groc mt-3">Groceries</p>
-        <p className="kili mt-3">Kilimanjaro</p>
+        <div className="d-flex mt-3 kili">
+          Kilimanjaro
+          <img src={Arrow} alt="Arrow" className="arrow mt-2 ms-1" />
+        </div>
       </div>
-      <form className="d-flex mt-5" role="search">
+      <div className="mt-3">
+        <img src={Filter} alt="filter" className="filter float-start ms-4" />
         <input
-          className="form-control border-0 text-center"
+          className="form-control border-0 text-center srch float-end me-3"
           type="search"
           placeholder="Search Grocery"
           aria-label="Search"
         />
-      </form>
+      </div>
     </main>
   );
 }
