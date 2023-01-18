@@ -274,3 +274,34 @@ body {
   display: none !important;
   border: none !important;
 }
+.my-home {
+  width: 20px;
+  height: 18px;
+}
+.nav-t {
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.my-cart {
+  width: 26px;
+  height: 19px;
+}
+#nav {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+.my-order {
+  width: 17px;
+  height: 19px;
+}
+.my-offer {
+  width: 20px;
+  height: 20px;
+}
+.my-settings {
+  width: 20px;
+  height: 19px;
+}

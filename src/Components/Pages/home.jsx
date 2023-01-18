@@ -1,4 +1,7 @@
 import FarmToDoor from "../img/farmtodoor.png";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import "../CSS/styles.css";
 import Arrow from "../img/arrow.png";
 import Filter from "../img/filter.png";
@@ -11,6 +14,11 @@ import Brocolli from "../img/brocolli.png";
 import Tomato from "../img/tomato.png";
 import GreenBeans from "../img/greenbeans.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import MyHome from "../img/home.png";
+import MyCart from "../img/mycart.png";
+import Order from "../img/order.png";
+import Offer from "../img/offer.png";
+import Setting from "../img/setting.png";
 
 function Home() {
   return (
@@ -72,7 +80,7 @@ function Home() {
           <Product img={Orange} className="orange" name="Orange" price="1.60" />
         </Col>
       </Row>
-      <Row className="px-3 mx-auto mt-3">
+      <Row className="px-3 mx-auto mt-3 mb-5">
         <Col>
           <Product img={Tomato} className="tomato" name="Tomato" price="5.60" />
         </Col>
@@ -85,6 +93,52 @@ function Home() {
           />
         </Col>
       </Row>
+      <Navbar bg="white" variant="light" fixed="bottom" className="pb-4">
+        <Container className="d-block">
+          <Nav className="me-auto" id="nav">
+            <Nav.Link href="#home" className="d-block">
+              <img
+                src={MyHome}
+                alt="home"
+                className="d-block my-home mx-auto"
+              />
+              <span className="nav-t">Home</span>
+            </Nav.Link>
+            <Nav.Link href="#home" className="d-block">
+              <img
+                src={MyCart}
+                alt="Cart"
+                className="d-block my-cart mx-auto"
+              />
+              <span className="nav-t">Cart</span>
+            </Nav.Link>
+            <Nav.Link href="#home" className="d-block">
+              <img
+                src={Order}
+                alt="Order"
+                className="d-block my-order mx-auto"
+              />
+              <span className="nav-t">Order</span>
+            </Nav.Link>
+            <Nav.Link href="#home" className="d-block">
+              <img
+                src={Offer}
+                alt="Offer"
+                className="d-block my-offer mx-auto"
+              />
+              <span className="nav-t">Offer</span>
+            </Nav.Link>
+            <Nav.Link href="#home" className="d-block">
+              <img
+                src={Setting}
+                alt="Offer"
+                className="d-block my-settings mx-auto"
+              />
+              <span className="nav-t">Settings</span>
+            </Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </main>
   );
 }
