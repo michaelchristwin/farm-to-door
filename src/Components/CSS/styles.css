@@ -200,9 +200,8 @@ body {
   height: 13px;
   width: 10px;
 }
-.filter {
-  height: 50px;
-  width: 50px;
+.filter:active {
+  transform: translateY(4px);
 }
 .strawberry {
   width: 136px;
@@ -248,4 +247,30 @@ body {
 .orange {
   width: 112px;
   height: 97px;
+}
+.tomato {
+  width: 103px;
+  height: 97px;
+}
+.green-beans {
+  width: 117px;
+  height: 97px;
+}
+.dropdown-toggle {
+  padding: 0px !important;
+  border: none !important;
+  margin: 0px !important;
+  background-color: #f6f7f9 !important;
+  width: 50px !important;
+  margin-right: 20px !important;
+}
+.dropdown-toggle img {
+  height: 50px;
+  width: 50px;
+}
+.dropdown-toggle::after {
+  padding: 0px !important;
+  margin: 0px !important;
+  display: none !important;
+  border: none !important;
 }
