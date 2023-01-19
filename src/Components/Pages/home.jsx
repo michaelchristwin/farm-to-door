@@ -33,13 +33,31 @@ function Home() {
       </div>
       <div className="py-3 d-flex justify-content-center">
         <Dropdown>
-          <Dropdown.Toggle>
+          <Dropdown.Toggle className="dropdown-toggles">
             <img src={Filter} alt="filter" className="filter me-3" />
           </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Menu className="dropdown-menu">
+            <Dropdown.Item className="item">
+              <Dropdown>
+                <Dropdown.Toggle className="food-tog"> Food</Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item>Deli</Dropdown.Item>
+                  <Dropdown.Item>Vegetable</Dropdown.Item>
+                  <Dropdown.Item>Fruit</Dropdown.Item>
+                  <Dropdown.Item>Frozen</Dropdown.Item>
+                  <Dropdown.Item>Drink & Beverage</Dropdown.Item>
+                  <Dropdown.Item>Spicyice</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-2" className="item">
+              Baby
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-3" className="item">
+              Health & Beauty
+            </Dropdown.Item>
+            <Dropdown.Item className="item">Pet Supplies</Dropdown.Item>
+            <Dropdown.Item className="item">Bathroom</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <input
@@ -93,8 +111,14 @@ function Home() {
           />
         </Col>
       </Row>
-      <Navbar bg="white" variant="light" fixed="bottom" className="pb-4">
-        <Container className="d-block">
+      <Navbar
+        bg="white"
+        variant="light"
+        fixed="bottom"
+        className="pb-4"
+        id="nav-bar"
+      >
+        <Container className="d-block cont-nav">
           <Nav className="me-auto" id="nav">
             <Nav.Link href="#home" className="d-block">
               <img

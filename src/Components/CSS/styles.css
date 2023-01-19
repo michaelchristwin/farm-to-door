@@ -256,7 +256,7 @@ body {
   width: 117px;
   height: 97px;
 }
-.dropdown-toggle {
+.dropdown-toggles {
   padding: 0px !important;
   border: none !important;
   margin: 0px !important;
@@ -264,11 +264,11 @@ body {
   width: 50px !important;
   margin-right: 20px !important;
 }
-.dropdown-toggle img {
+.dropdown-toggles img {
   height: 50px;
   width: 50px;
 }
-.dropdown-toggle::after {
+.dropdown-toggles::after {
   padding: 0px !important;
   margin: 0px !important;
   display: none !important;
@@ -292,6 +292,7 @@ body {
 #nav {
   display: flex !important;
   justify-content: space-around !important;
+  border-radius: 9px !important;
 }
 .my-order {
   width: 17px;
@@ -304,4 +305,28 @@ body {
 .my-settings {
   width: 20px;
   height: 19px;
+}
+.dropdown-menu {
+  width: 196px !important;
+  background-color: #52a933 !important;
+}
+.item:hover {
+  background-color: #62d23a !important;
+}
+.item {
+  color: white !important;
+}
+#nav-bar {
+  border-radius: 9px !important;
+}
+.cont-nav {
+  border-radius: 9px !important;
+}
+.food-tog {
+  border: none !important;
+  background-color: #52a933 !important;
+  padding: 1px !important;
+}
+.food-tog:hover {
+  background-color: #62d23a !important;
 }
