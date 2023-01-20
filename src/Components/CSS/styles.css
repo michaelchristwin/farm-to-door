@@ -330,3 +330,23 @@ body {
 .food-tog:hover {
   background-color: #62d23a !important;
 }
+.welcome {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #707280;
+}
+.uname {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: #222649;
+}
+.dp {
+  width: 50px;
+  height: 50px;
+}

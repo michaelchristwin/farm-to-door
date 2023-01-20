@@ -13,6 +13,7 @@ import ForgotPassword from "./Pages/forgot_password";
 import ForgotPassword2 from "./Pages/forgot_password2";
 import ForgotPassword3 from "./Pages/forgot_password3";
 import Home from "./Pages/home";
+import HomeS from "./Pages/home_s";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           element={<ForgotPassword3 />}
         />
         <Route path={`${BaseUrl}/home`} element={<Home />} />
+        <Route path={`${BaseUrl}/search`} element={<HomeS />} />
       </Routes>
     </main>
   );
