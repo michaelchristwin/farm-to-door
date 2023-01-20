@@ -39,8 +39,8 @@ function Home() {
           <Dropdown.Menu className="dropdown-menu">
             <Dropdown.Item className="item">
               <Dropdown>
-                <Dropdown.Toggle className="food-tog"> Food</Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Toggle className="food-tog">Food</Dropdown.Toggle>
+                <Dropdown.Menu id="mali">
                   <Dropdown.Item>Deli</Dropdown.Item>
                   <Dropdown.Item>Vegetable</Dropdown.Item>
                   <Dropdown.Item>Fruit</Dropdown.Item>
@@ -50,6 +50,7 @@ function Home() {
                 </Dropdown.Menu>
               </Dropdown>
             </Dropdown.Item>
+            <Dropdown.Divider />
             <Dropdown.Item href="#/action-2" className="item">
               Baby
             </Dropdown.Item>
