@@ -4,6 +4,7 @@ import { Dropdown } from "react-bootstrap";
 import Filter from "../img/filter.png";
 import ProductList from "../JSX/ProductList";
 import Items from "../JSX/Items";
+import NavBar from "../JSX/Navbar";
 
 function HomeS() {
   const MyProducts = ProductList.map((product) => {
@@ -12,7 +13,7 @@ function HomeS() {
     );
   });
   return (
-    <main className="px-3">
+    <main className="px-3 home-s">
       <span className="welcome d-block mt-4">Welcome</span>
       <div className="d-flex justify-content-between">
         <p className="uname mt-3 d-block">Emmanuel Elias</p>
@@ -55,7 +56,10 @@ function HomeS() {
           aria-label="Search"
         />
       </div>
-      <div className="item2 bg-white p-2 ps-list mx-auto">{MyProducts}</div>
+      <div className="item2 bg-white p-2 ps-list mx-auto mt-2 mb-4">
+        {MyProducts}
+      </div>
+      <NavBar />
     </main>
   );
 }
