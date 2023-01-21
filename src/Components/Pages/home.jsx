@@ -12,8 +12,16 @@ import Tomato from "../img/tomato.png";
 import GreenBeans from "../img/greenbeans.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import NavBar from "../JSX/Navbar";
+import { useState } from "react";
 
 function Home() {
+  const [search, setSearch] = useState({
+    query: "",
+  });
+  console.log(search);
+  function handleinput(e) {
+    setSearch({ ...search, query: e.target.value });
+  }
   return (
     <main className="home">
       <div className="d-flex justify-content-between px-2 bg-white">
@@ -59,6 +67,7 @@ function Home() {
           type="search"
           placeholder="Search Grocery"
           aria-label="Search"
+          onChange={handleinput}
         />
       </div>
       <Row className="mx-auto px-3">
