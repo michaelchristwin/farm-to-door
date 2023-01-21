@@ -5,11 +5,40 @@ import Filter from "../img/filter.png";
 import ProductList from "../JSX/ProductList";
 import Items from "../JSX/Items";
 import NavBar from "../JSX/Navbar";
+import { useState } from "react";
 
 function HomeS() {
+  const [search, setSearch] = useState({
+    query: "",
+  });
+  console.log(search);
+  function handleinput(e) {
+    setSearch({ ...search, query: e.target.value });
+  }
+
+  function result() {
+    ProductList.map((product) => {
+      return search.query.toLowerCase() === product.name.toLowerCase() ? (
+        <Items
+          name={product.name}
+          img={product.img}
+          price={product.price}
+          key={product.name}
+        />
+      ) : (
+        false
+      );
+    });
+  }
+
   const MyProducts = ProductList.map((product) => {
     return (
-      <Items name={product.name} img={product.img} price={product.price} />
+      <Items
+        name={product.name}
+        img={product.img}
+        price={product.price}
+        key={product.name}
+      />
     );
   });
   return (
@@ -54,9 +83,12 @@ function HomeS() {
           type="search"
           placeholder="Search Grocery"
           aria-label="Search"
+          onChange={handleinput}
+          onKeyDown={result}
         />
       </div>
       <div className="item2 bg-white p-2 ps-list mx-auto mt-2 mb-4">
+        {result === false ? "No search result" : MyProducts}
         {MyProducts}
       </div>
       <NavBar />

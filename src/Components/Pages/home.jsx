@@ -22,6 +22,10 @@ function Home() {
   function handleinput(e) {
     setSearch({ ...search, query: e.target.value });
   }
+  function handleKeypress(e) {
+    let input = e.target.value;
+  }
+
   return (
     <main className="home">
       <div className="d-flex justify-content-between px-2 bg-white">
@@ -68,6 +72,7 @@ function Home() {
           placeholder="Search Grocery"
           aria-label="Search"
           onChange={handleinput}
+          onKeyDown={handleKeypress}
         />
       </div>
       <Row className="mx-auto px-3">
