@@ -350,3 +350,25 @@ body {
   width: 50px;
   height: 50px;
 }
+.p-list {
+  width: 32px;
+  height: 32px;
+}
+.ps-list {
+  width: 85vw;
+}
+.pl-name {
+  font-family: Helvetica;
+  font-weight: 500;
+  color: #707280;
+  font-size: 16px;
+}
+.pl-price {
+  color: #52a933;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+}
+.item2 {
+  border-radius: 10px;
+}

@@ -2,8 +2,15 @@ import "../CSS/styles.css";
 import DP from "../img/dp.png";
 import { Dropdown } from "react-bootstrap";
 import Filter from "../img/filter.png";
+import ProductList from "../JSX/ProductList";
+import Items from "../JSX/Items";
 
 function HomeS() {
+  const MyProducts = ProductList.map((product) => {
+    return (
+      <Items name={product.name} img={product.img} price={product.price} />
+    );
+  });
   return (
     <main className="px-3">
       <span className="welcome d-block mt-4">Welcome</span>
@@ -48,6 +55,7 @@ function HomeS() {
           aria-label="Search"
         />
       </div>
+      <div className="item2 bg-white p-2 ps-list mx-auto">{MyProducts}</div>
     </main>
   );
 }
