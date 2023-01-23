@@ -14,6 +14,7 @@ import ForgotPassword2 from "./Pages/forgot_password2";
 import ForgotPassword3 from "./Pages/forgot_password3";
 import Home from "./Pages/home";
 import HomeS from "./Pages/home_s";
+import Details from "./Pages/details";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         />
         <Route path={`${BaseUrl}/home`} element={<Home />} />
         <Route path={`${BaseUrl}/search`} element={<HomeS />} />
+        <Route path={`${BaseUrl}/details`} element={<Details />} />
       </Routes>
     </main>
   );

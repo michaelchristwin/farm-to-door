@@ -375,3 +375,34 @@ body {
 .home-s {
   padding-bottom: 80px;
 }
+.back {
+  width: 44px;
+  height: 44px;
+}
+.top {
+  background-color: #faf0e6;
+  max-width: 100vwh;
+  height: 270px;
+  margin-bottom: 90px;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+.orange-d {
+  width: 311px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fruit-name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: #222649;
+}
+.star {
+  width: 120px;
+  height: 21px;
+}
