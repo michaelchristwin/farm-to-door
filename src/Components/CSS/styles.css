@@ -406,3 +406,15 @@ body {
   width: 120px;
   height: 21px;
 }
+.five {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #c5c5ca;
+}
+.contr {
+  width: 30px;
+  height: 30px;
+}
