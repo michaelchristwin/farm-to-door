@@ -23,7 +23,7 @@ function Home() {
     setSearch({ ...search, query: e.target.value });
   }
   function handleKeypress(e) {
-    let input = e.target.value;
+    return null;
   }
 
   return (
@@ -82,6 +82,7 @@ function Home() {
             className="strawberry"
             name="Strawberry"
             price="10.6"
+            type="Fruit"
           />
         </Col>
         <Col>
@@ -90,6 +91,7 @@ function Home() {
             className="avacado"
             name="Avacado"
             price="10.6"
+            type="Fruit"
           />
         </Col>
       </Row>
@@ -100,15 +102,28 @@ function Home() {
             className="brocolli"
             name="Broccoli"
             price="10.6"
+            type="Vegetable"
           />
         </Col>
         <Col>
-          <Product img={Orange} className="orange" name="Orange" price="1.60" />
+          <Product
+            img={Orange}
+            className="orange"
+            name="Orange"
+            price="1.60"
+            type="Fruit"
+          />
         </Col>
       </Row>
       <Row className="px-3 mx-auto mt-3 mb-5">
         <Col>
-          <Product img={Tomato} className="tomato" name="Tomato" price="5.60" />
+          <Product
+            img={Tomato}
+            className="tomato"
+            name="Tomato"
+            price="5.60"
+            type="Vegetable"
+          />
         </Col>
         <Col>
           <Product
@@ -116,6 +131,7 @@ function Home() {
             className="green-beans"
             name="Greenbeans"
             price="5.60"
+            type="Vegetable"
           />
         </Col>
       </Row>

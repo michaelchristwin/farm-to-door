@@ -11,27 +11,20 @@ function HomeS() {
   const [search, setSearch] = useState({
     query: "",
   });
+
   console.log(search);
+
   function handleinput(e) {
     setSearch({ ...search, query: e.target.value });
   }
 
-  function result() {
-    ProductList.map((product) => {
-      return search.query.toLowerCase() === product.name.toLowerCase() ? (
-        <Items
-          name={product.name}
-          img={product.img}
-          price={product.price}
-          key={product.name}
-        />
-      ) : (
-        false
-      );
-    });
+  function filterData(data) {
+    return data.filter((item) =>
+      item.name.toLowerCase().includes(search.query.toLowerCase())
+    );
   }
 
-  const MyProducts = ProductList.map((product) => {
+  const filteredData = filterData(ProductList).map((product) => {
     return (
       <Items
         name={product.name}
@@ -41,6 +34,7 @@ function HomeS() {
       />
     );
   });
+
   return (
     <main className="px-3 home-s">
       <span className="welcome d-block mt-4">Welcome</span>
@@ -81,15 +75,14 @@ function HomeS() {
         <input
           className="form-control border-0 text-center srch me-1"
           type="search"
+          value={search.query}
           placeholder="Search Grocery"
           aria-label="Search"
           onChange={handleinput}
-          onKeyDown={result}
         />
       </div>
       <div className="item2 bg-white p-2 ps-list mx-auto mt-2 mb-4">
-        {result === false ? "No search result" : MyProducts}
-        {MyProducts}
+        {filteredData}
       </div>
       <NavBar />
     </main>
