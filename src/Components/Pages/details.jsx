@@ -11,7 +11,7 @@ import Product from "../JSX/product";
 import { Row, Col } from "react-bootstrap";
 import Brocolli from "../img/brocolli.png";
 
-function Details() {
+function Details(props) {
   const [count, setCount] = useState(0);
   function Add() {
     setCount((prevCount) => {

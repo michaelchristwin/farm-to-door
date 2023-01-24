@@ -15,6 +15,7 @@ import ForgotPassword3 from "./Pages/forgot_password3";
 import Home from "./Pages/home";
 import HomeS from "./Pages/home_s";
 import Details from "./Pages/details";
+import ProductList from "./JSX/ProductList";
 
 function App() {
   return (
@@ -42,7 +43,17 @@ function App() {
         />
         <Route path={`${BaseUrl}/home`} element={<Home />} />
         <Route path={`${BaseUrl}/search`} element={<HomeS />} />
-        <Route path={`${BaseUrl}/details`} element={<Details />} />
+        <Route
+          path={`${BaseUrl}/details-strawberry`}
+          element={
+            <Details
+              img={ProductList[0].img}
+              key={ProductList[0].name}
+              name={ProductList[0].name}
+              type={ProductList[0].type}
+            />
+          }
+        />
       </Routes>
     </main>
   );
