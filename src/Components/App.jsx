@@ -16,6 +16,7 @@ import Home from "./Pages/home";
 import HomeS from "./Pages/home_s";
 import Details from "./Pages/details";
 import DList from "./JSX/detailList";
+import Cart from "./Pages/cart";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
             />
           }
         />
+        <Route path={`${BaseUrl}/cart`} element={<Cart />} />
       </Routes>
     </main>
   );

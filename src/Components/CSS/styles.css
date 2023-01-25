@@ -454,3 +454,39 @@ body {
   letter-spacing: 0.2px;
   color: #52a933;
 }
+.cart-g {
+  background-color: #52a933;
+  height: 100vh;
+}
+.back-g {
+  width: 44px;
+  height: 44px;
+}
+.cart-t {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.the-cart {
+  background-color: #f6f7f9 !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100vh;
+}
+.cart-b {
+  width: 102px;
+  height: 38px;
+  background-color: white;
+  border-radius: 50px !important;
+}
+.cart-b:active {
+  background-color: #52a933 !important;
+  color: white !important;
+}
+.cart-b:hover {
+  background-color: #52a933 !important;
+  color: white !important;
+}
