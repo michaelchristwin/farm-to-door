@@ -1,7 +1,6 @@
 import Back from "../img/back.png";
 import Like from "../img/like.png";
 import "../CSS/styles.css";
-import OrangeD from "../img/orange-d.png";
 import Star from "../img/5star.png";
 import { useState } from "react";
 import Plus from "../img/plus.png";
@@ -25,15 +24,24 @@ function Details(props) {
   }
   return (
     <main>
-      <section className="top pt-4">
+      <section
+        className="top pt-4"
+        style={
+          props.name === "Orange"
+            ? { backgroundColor: "#faf0e6" }
+            : { backgroundColor: "#ebf5e8" }
+        }
+      >
         <div className="d-flex justify-content-between mt-2">
           <img src={Back} alt="Back" className="back ms-3" />
           <img src={Like} alt="Like" className="back me-3" />
         </div>
-        <img src={OrangeD} alt="Product" className="orange-d d-block" />
+        <img src={props.img} alt="Product" className="orange-d d-block" />
       </section>
       <section className="px-3">
-        <p className="fruit-name">Orange Fruit</p>
+        <p className="fruit-name">
+          {props.name} {props.type}
+        </p>
         <div className="d-flex justify-content-between">
           <div className="d-flex">
             <img src={Star} alt="Rating" className="star" />

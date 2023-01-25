@@ -15,7 +15,7 @@ import ForgotPassword3 from "./Pages/forgot_password3";
 import Home from "./Pages/home";
 import HomeS from "./Pages/home_s";
 import Details from "./Pages/details";
-import ProductList from "./JSX/ProductList";
+import DList from "./JSX/detailList";
 
 function App() {
   return (
@@ -44,13 +44,25 @@ function App() {
         <Route path={`${BaseUrl}/home`} element={<Home />} />
         <Route path={`${BaseUrl}/search`} element={<HomeS />} />
         <Route
-          path={`${BaseUrl}/details-strawberry`}
+          path={`${BaseUrl}/details-orange`}
           element={
             <Details
-              img={ProductList[0].img}
-              key={ProductList[0].name}
-              name={ProductList[0].name}
-              type={ProductList[0].type}
+              img={DList[0].img}
+              key={DList[0].name}
+              name={DList[0].name}
+              type={DList[0].type}
+            />
+          }
+        />
+        <Route
+          path={`${BaseUrl}/details-brocolli`}
+          element={
+            <Details
+              img={DList[1].img}
+              key={DList[1].name}
+              name={DList[1].name}
+              type={DList[1].type}
+              bg="#faf0e6"
             />
           }
         />
