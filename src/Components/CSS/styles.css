@@ -490,3 +490,51 @@ body {
   background-color: #52a933 !important;
   color: white !important;
 }
+.cart-i {
+  width: 80px;
+  height: 75px;
+}
+.item-name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #222649;
+}
+.item-price {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #52a933;
+}
+.size {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #707280;
+}
+.add-note {
+  width: 16px;
+  height: 16px;
+}
+.add-t {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #52a933;
+}
+.delete {
+  width: 20px;
+  height: 20px;
+}
+.hr {
+  width: 335px;
+}
