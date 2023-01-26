@@ -538,3 +538,10 @@ body {
 .hr {
   width: 335px;
 }
+.checkout {
+  width: 320px;
+  height: 54px;
+  background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%);
+  border-radius: 50px !important;
+  color: white !important;
+}
