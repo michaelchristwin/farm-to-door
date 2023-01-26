@@ -284,6 +284,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #c5c5ca !important;
 }
 .my-cart {
   width: 26px;
@@ -544,4 +545,10 @@ body {
   background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%);
   border-radius: 50px !important;
   color: white !important;
+}
+.cart-link {
+  text-decoration: none !important;
+}
+.fin {
+  margin-top: -100px;
 }

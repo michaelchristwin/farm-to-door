@@ -7,6 +7,8 @@ import Order from "../img/order.png";
 import Offer from "../img/offer.png";
 import Setting from "../img/setting.png";
 import "../CSS/styles.css";
+import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function NavBar() {
   return (
@@ -19,13 +21,25 @@ function NavBar() {
     >
       <Container className="d-block cont-nav">
         <Nav className="me-auto" id="nav">
-          <Nav.Link href="#home" className="d-block">
-            <img src={MyHome} alt="home" className="d-block my-home mx-auto" />
-            <span className="nav-t">Home</span>
+          <Nav.Link className="d-block">
+            <Link to={`${BaseUrl}/home`} className="cart-link">
+              <img
+                src={MyHome}
+                alt="home"
+                className="d-block my-home mx-auto"
+              />
+              <span className="nav-t">Home</span>
+            </Link>
           </Nav.Link>
-          <Nav.Link href="#home" className="d-block">
-            <img src={MyCart} alt="Cart" className="d-block my-cart mx-auto" />
-            <span className="nav-t">Cart</span>
+          <Nav.Link className="d-block">
+            <Link to={`${BaseUrl}/cart`} className="cart-link">
+              <img
+                src={MyCart}
+                alt="Cart"
+                className="d-block my-cart mx-auto"
+              />
+              <span className="nav-t">Cart</span>
+            </Link>
           </Nav.Link>
           <Nav.Link href="#home" className="d-block">
             <img src={Order} alt="Order" className="d-block my-order mx-auto" />
