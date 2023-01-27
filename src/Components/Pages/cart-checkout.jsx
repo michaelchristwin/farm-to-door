@@ -12,8 +12,11 @@ import Offer from "../img/offer.png";
 import Setting from "../img/setting.png";
 import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
+import { useState } from "react";
+import MyVerticallyCenteredModal from "../JSX/MyModal";
 
 function CartCheckout() {
+  const [modalShow, setModalShow] = useState(false);
   const ToBuy = CartList.map((item) => {
     return (
       <CartItem
@@ -57,7 +60,10 @@ function CartCheckout() {
               <p className="sub-price-l">Tsh11.52</p>
             </div>
           </div>
-          <button className="btn checkout d-block mx-auto mb-2">
+          <button
+            className="btn checkout d-block mx-auto mb-2"
+            onClick={() => setModalShow(true)}
+          >
             Checkout
           </button>
           <Navbar bg="white" variant="light" className="pb-3" id="nav-bar">
@@ -112,6 +118,10 @@ function CartCheckout() {
           </Navbar>
         </section>
       </section>
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </main>
   );
 }
