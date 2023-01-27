@@ -475,7 +475,7 @@ body {
   background-color: #f6f7f9 !important;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 80vh;
+  height: 100vh;
 }
 .cart-b {
   width: 102px;
@@ -542,8 +542,13 @@ body {
 .checkout {
   width: 320px;
   height: 54px;
+  text-decoration: none !important;
   background: linear-gradient(90deg, #52a933 24.74%, #62d23a 83.62%);
   border-radius: 50px !important;
+  color: white !important;
+}
+.li-out {
+  text-decoration: none;
   color: white !important;
 }
 .cart-link {
@@ -551,4 +556,40 @@ body {
 }
 .fin {
   margin-top: -100px;
+}
+.check-s {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cart-tot {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fa9930;
+}
+.sub-tot {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222649;
+}
+.sub-price {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #707280;
+}
+.sub-price-l {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fa9930;
 }

@@ -39,59 +39,63 @@ function Cart() {
           <button className="cart-b btn border ms-1">Processing</button>
         </div>
         {ToBuy}
-      </section>
-      <section className="bg-light">
-        <button className="btn checkout d-block mx-auto mb-2">Checkout</button>
-        <Navbar bg="white" variant="light" className="pb-4" id="nav-bar">
-          <Container className="d-block cont-nav">
-            <Nav className="me-auto" id="nav">
-              <Nav.Link className="d-block">
-                <Link to={`${BaseUrl}/home`} className="cart-link">
+        <section className="bg-white pt-3 check-s">
+          <button className="btn checkout d-block mx-auto mb-2">
+            <Link to={`${BaseUrl}/cart-checkout`} className="li-out">
+              Checkout
+            </Link>
+          </button>
+          <Navbar bg="white" variant="light" className="pb-3" id="nav-bar">
+            <Container className="d-block cont-nav">
+              <Nav className="me-auto" id="nav">
+                <Nav.Link className="d-block">
+                  <Link to={`${BaseUrl}/home`} className="cart-link">
+                    <img
+                      src={MyHome}
+                      alt="home"
+                      className="d-block my-home mx-auto"
+                    />
+                    <span className="nav-t">Home</span>
+                  </Link>
+                </Nav.Link>
+                <Nav.Link className="d-block">
+                  <Link to={`${BaseUrl}/cart`} className="cart-link">
+                    <img
+                      src={MyCart}
+                      alt="Cart"
+                      className="d-block my-cart mx-auto"
+                    />
+                    <span className="nav-t">Cart</span>
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="#home" className="d-block">
                   <img
-                    src={MyHome}
-                    alt="home"
-                    className="d-block my-home mx-auto"
+                    src={Order}
+                    alt="Order"
+                    className="d-block my-order mx-auto"
                   />
-                  <span className="nav-t">Home</span>
-                </Link>
-              </Nav.Link>
-              <Nav.Link className="d-block">
-                <Link to={`${BaseUrl}/cart`} className="cart-link">
+                  <span className="nav-t">Order</span>
+                </Nav.Link>
+                <Nav.Link href="#home" className="d-block">
                   <img
-                    src={MyCart}
-                    alt="Cart"
-                    className="d-block my-cart mx-auto"
+                    src={Offer}
+                    alt="Offer"
+                    className="d-block my-offer mx-auto"
                   />
-                  <span className="nav-t">Cart</span>
-                </Link>
-              </Nav.Link>
-              <Nav.Link href="#home" className="d-block">
-                <img
-                  src={Order}
-                  alt="Order"
-                  className="d-block my-order mx-auto"
-                />
-                <span className="nav-t">Order</span>
-              </Nav.Link>
-              <Nav.Link href="#home" className="d-block">
-                <img
-                  src={Offer}
-                  alt="Offer"
-                  className="d-block my-offer mx-auto"
-                />
-                <span className="nav-t">Offer</span>
-              </Nav.Link>
-              <Nav.Link href="#home" className="d-block">
-                <img
-                  src={Setting}
-                  alt="Offer"
-                  className="d-block my-settings mx-auto"
-                />
-                <span className="nav-t">Settings</span>
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
+                  <span className="nav-t">Offer</span>
+                </Nav.Link>
+                <Nav.Link href="#home" className="d-block">
+                  <img
+                    src={Setting}
+                    alt="Offer"
+                    className="d-block my-settings mx-auto"
+                  />
+                  <span className="nav-t">Settings</span>
+                </Nav.Link>
+              </Nav>
+            </Container>
+          </Navbar>
+        </section>
       </section>
     </main>
   );

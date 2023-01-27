@@ -17,6 +17,7 @@ import HomeS from "./Pages/home_s";
 import Details from "./Pages/details";
 import DList from "./JSX/detailList";
 import Cart from "./Pages/cart";
+import CartCheckout from "./Pages/cart-checkout";
 
 function App() {
   return (
@@ -68,7 +69,7 @@ function App() {
           }
         />
         <Route path={`${BaseUrl}/cart`} element={<Cart />} />
-        <Route path={`${BaseUrl}/cart-checkout`} />
+        <Route path={`${BaseUrl}/cart-checkout`} element={<CartCheckout />} />
       </Routes>
     </main>
   );
