@@ -18,7 +18,7 @@ function CartItem(props) {
     });
   }
   return (
-    <main>
+    <main className="pb-2">
       <div className="d-flex cart-p mt-3 px-3 justify-content-between">
         <div className="d-flex">
           <img src={props.img} alt="" className="cart-i" />
@@ -42,7 +42,7 @@ function CartItem(props) {
         </div>
         <img src={Delete} alt="" className="delete ms-3" />
       </div>
-      <hr className="mt-3 hr d-block mx-auto" />
+      <hr className="mt-3 hr d-block mx-auto " />
     </main>
   );
 }

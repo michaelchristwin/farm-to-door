@@ -68,6 +68,7 @@ function App() {
           }
         />
         <Route path={`${BaseUrl}/cart`} element={<Cart />} />
+        <Route path={`${BaseUrl}/cart-checkout`} />
       </Routes>
     </main>
   );
