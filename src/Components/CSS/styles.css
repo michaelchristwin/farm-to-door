@@ -620,7 +620,7 @@ body {
   height: 50px;
   border-radius: 50px !important;
 }
-.btn-pd:hover {
+.mod-active {
   background-color: #fa9930 !important;
   color: white !important;
 }

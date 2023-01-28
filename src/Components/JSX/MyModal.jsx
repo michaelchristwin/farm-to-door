@@ -17,14 +17,12 @@ function MyVerticallyCenteredModal(props) {
       <p className="d-block ms-3 young">9000 Young Street store</p>
       <Modal.Body>
         <div className="pd border d-flex mx-auto">
-          <button className="btn-pd btn">Pickup</button>
+          <button className="btn-pd btn mod-active">Pickup</button>
           <button className="btn-pd btn">Delivery</button>
         </div>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <div className="pd border mx-auto mt-3">
+          <p>Choose a pickup time</p>
+        </div>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
