@@ -593,3 +593,34 @@ body {
   line-height: 19px;
   color: #fa9930;
 }
+.top-mod {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #fa9930;
+}
+.young {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #222649;
+}
+.pd {
+  border-radius: 50px;
+  width: 295px;
+  height: 50px;
+}
+.btn-pd {
+  width: 147px;
+  height: 50px;
+  border-radius: 50px !important;
+}
+.btn-pd:hover {
+  background-color: #fa9930 !important;
+  color: white !important;
+}
