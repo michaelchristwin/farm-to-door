@@ -650,8 +650,7 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
+  width: 400px !important;
 }
 .pay-inp2 {
   width: 160px !important;

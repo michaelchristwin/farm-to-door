@@ -9,7 +9,7 @@ function Payment() {
         <p className="cart-t mt-2 ms-2">Payment Details</p>
       </div>
       <section className="the-pay">
-        <div className="px-4">
+        <div className="d-block px-4">
           <label
             htmlFor="total-amount"
             className="label form-label pt-4 mx-auto"
@@ -20,7 +20,7 @@ function Payment() {
             type="text"
             id="total-amount"
             placeholder="Tsh 11.52"
-            className="form-control pay-inp"
+            className="form-control pay-inp d-block mx-auto"
           />
         </div>
         <div className="mt-4 px-4">
@@ -31,7 +31,7 @@ function Payment() {
             type="text"
             id="payment-method"
             placeholder="Credit Card"
-            className="form-control pay-inp"
+            className="form-control pay-inp d-block mx-auto"
           />
         </div>
         <div className="mt-4">
@@ -45,7 +45,7 @@ function Payment() {
             <input
               type="text"
               placeholder="dd/mm/yyyy"
-              className="form-control pay-inp2 ms-2"
+              className="form-control pay-inp2 ms-2 "
             />
           </div>
         </div>
