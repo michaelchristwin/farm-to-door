@@ -640,3 +640,30 @@ body {
   border-color: #fa9930 !important;
   width: 295px !important;
 }
+.pay-inp {
+  width: 335px !important;
+  height: 49px;
+  border-radius: 50px !important;
+}
+.the-pay {
+  background-color: #f6f7f9 !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.pay-inp2 {
+  width: 160px !important;
+  height: 49px;
+  border-radius: 50px !important;
+}
+@media (max-width: 400px) {
+  .label {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222649;
+  }
+}

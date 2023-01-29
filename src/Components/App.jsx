@@ -18,6 +18,7 @@ import Details from "./Pages/details";
 import DList from "./JSX/detailList";
 import Cart from "./Pages/cart";
 import CartCheckout from "./Pages/cart-checkout";
+import Payment from "./Pages/payment-details";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
         />
         <Route path={`${BaseUrl}/cart`} element={<Cart />} />
         <Route path={`${BaseUrl}/cart-checkout`} element={<CartCheckout />} />
+        <Route path={`${BaseUrl}/payment-details`} element={<Payment />} />
       </Routes>
     </main>
   );
