@@ -60,12 +60,14 @@ function CartCheckout() {
               <p className="sub-price-l">Tsh11.52</p>
             </div>
           </div>
-          <button
-            className="btn checkout d-block mx-auto mb-2"
-            onClick={() => setModalShow(true)}
-          >
-            Checkout
-          </button>
+          {modalShow ? null : (
+            <button
+              className="btn checkout d-block mx-auto mb-2"
+              onClick={() => setModalShow(true)}
+            >
+              Checkout
+            </button>
+          )}
           <Navbar bg="white" variant="light" className="pb-3" id="nav-bar">
             <Container className="d-block cont-nav">
               <Nav className="me-auto" id="nav">

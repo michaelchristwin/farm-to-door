@@ -8,12 +8,20 @@ import { useState } from "react";
 function MyVerticallyCenteredModal(props) {
   const [show, setShow] = useState(true);
   function Swap() {
-    let pickUp = document.getElementById("deli");
-    let deliver = document.getElementById("pick");
-    pickUp.classList.add("mod-active");
-    deliver.classList.remove("mod-active");
+    let deliver = document.getElementById("deli");
+    let pickUp = document.getElementById("pick");
+    deliver.classList.add("mod-active");
+    pickUp.classList.remove("mod-active");
     setShow(false);
     console.log("Fuck JavaScript");
+  }
+  function Unswap() {
+    let deliver = document.getElementById("deli");
+    let pickUp = document.getElementById("pick");
+    deliver.classList.remove("mod-active");
+    pickUp.classList.add("mod-active");
+    setShow(true);
+    console.log("Fuck JS");
   }
   return (
     <Modal
@@ -29,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
       <p className="d-block ms-3 young">9000 Young Street store</p>
       <Modal.Body>
         <div className="pd d-flex mx-auto">
-          <button className="btn-pd btn mod-active" id="pick">
+          <button className="btn-pd btn mod-active" id="pick" onClick={Unswap}>
             Pickup
           </button>
           <button className="btn-pd btn" id="deli" onClick={Swap}>
