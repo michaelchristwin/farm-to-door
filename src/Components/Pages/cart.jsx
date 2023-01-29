@@ -48,16 +48,14 @@ function Cart() {
           <Navbar bg="white" variant="light" className="pb-3" id="nav-bar">
             <Container className="d-block cont-nav">
               <Nav className="me-auto" id="nav">
-                <Nav.Link className="d-block">
-                  <Link to={`${BaseUrl}/home`} className="cart-link">
-                    <img
-                      src={MyHome}
-                      alt="home"
-                      className="d-block my-home mx-auto"
-                    />
-                    <span className="nav-t">Home</span>
-                  </Link>
-                </Nav.Link>
+                <Link to={`${BaseUrl}/home`} className="cart-link d-block">
+                  <img
+                    src={MyHome}
+                    alt="home"
+                    className="d-block my-home mx-auto"
+                  />
+                  <span className="nav-t">Home</span>
+                </Link>
                 <Nav.Link className="d-block">
                   <Link to={`${BaseUrl}/cart`} className="cart-link">
                     <img

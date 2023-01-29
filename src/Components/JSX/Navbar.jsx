@@ -21,26 +21,16 @@ function NavBar() {
     >
       <Container className="d-block cont-nav">
         <Nav className="me-auto" id="nav">
-          <Nav.Link className="d-block">
-            <Link to={`${BaseUrl}/home`} className="cart-link">
-              <img
-                src={MyHome}
-                alt="home"
-                className="d-block my-home mx-auto"
-              />
-              <span className="nav-t">Home</span>
-            </Link>
-          </Nav.Link>
-          <Nav.Link className="d-block">
-            <Link to={`${BaseUrl}/cart`} className="cart-link">
-              <img
-                src={MyCart}
-                alt="Cart"
-                className="d-block my-cart mx-auto"
-              />
-              <span className="nav-t">Cart</span>
-            </Link>
-          </Nav.Link>
+          <Link to={`${BaseUrl}/home`} className="cart-link d-block nav-link">
+            <img src={MyHome} alt="home" className="d-block my-home mx-auto" />
+            <span className="nav-t">Home</span>
+          </Link>
+
+          <Link to={`${BaseUrl}/cart`} className="cart-link nav-link d-block">
+            <img src={MyCart} alt="Cart" className="d-block my-cart mx-auto" />
+            <span className="nav-t">Cart</span>
+          </Link>
+
           <Nav.Link href="#home" className="d-block">
             <img src={Order} alt="Order" className="d-block my-order mx-auto" />
             <span className="nav-t">Order</span>

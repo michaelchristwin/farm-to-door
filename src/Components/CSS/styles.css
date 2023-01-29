@@ -622,5 +622,12 @@ body {
 }
 .mod-active {
   background-color: #fa9930 !important;
+  width: 147px;
+  height: 50px;
+  border-radius: 50px !important;
   color: white !important;
+}
+.time {
+  width: 16.67px;
+  height: 16.67px;
 }
