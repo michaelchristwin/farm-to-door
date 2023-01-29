@@ -614,6 +614,9 @@ body {
   border-radius: 50px;
   width: 295px;
   height: 50px;
+  border-color: #fa9930 !important;
+  border-style: solid;
+  border-width: thin;
 }
 .btn-pd {
   width: 147px;
@@ -630,4 +633,10 @@ body {
 .time {
   width: 16.67px;
   height: 16.67px;
+}
+.input-add {
+  border-radius: 50px !important;
+  height: 50px;
+  border-color: #fa9930 !important;
+  width: 295px !important;
 }

@@ -8,8 +8,10 @@ import { useState } from "react";
 function MyVerticallyCenteredModal(props) {
   const [show, setShow] = useState(true);
   function Swap() {
-    let pickUp = document.getElementById("pick");
+    let pickUp = document.getElementById("deli");
+    let deliver = document.getElementById("pick");
     pickUp.classList.add("mod-active");
+    deliver.classList.remove("mod-active");
     setShow(false);
     console.log("Fuck JavaScript");
   }
@@ -26,16 +28,33 @@ function MyVerticallyCenteredModal(props) {
       </div>
       <p className="d-block ms-3 young">9000 Young Street store</p>
       <Modal.Body>
-        <div className="pd border d-flex mx-auto">
-          <button className="btn-pd btn">Pickup</button>
-          <button className="btn-pd btn" id="pick" onClick={Swap}>
+        <div className="pd d-flex mx-auto">
+          <button className="btn-pd btn mod-active" id="pick">
+            Pickup
+          </button>
+          <button className="btn-pd btn" id="deli" onClick={Swap}>
             Delivery
           </button>
         </div>
-        <div className="pd border mx-auto mt-3 d-flex pt-2 px-3 justify-content-between">
-          <p>Choose a pickup time</p>
-          <img src={Time} alt="Time" className="time mt-1" />
-        </div>
+        {show ? (
+          <div className="pd mx-auto mt-3 d-flex pt-2 px-3 justify-content-between">
+            <p>Choose a pickup time</p>
+            <img src={Time} alt="Time" className="time mt-1" />
+          </div>
+        ) : (
+          <div className="d-block">
+            <input
+              type="text"
+              className="form-control input-add mx-auto mt-3"
+              placeholder="Enter your address"
+            />
+            <input
+              type="text"
+              className="form-control input-add mx-auto mt-3"
+              placeholder="Enter your pone number"
+            />
+          </div>
+        )}
         <button className="btn checkout d-block mx-auto mt-3">
           <Link to={`${BaseUrl}/cart-checkout`} className="li-out">
             Checkout
