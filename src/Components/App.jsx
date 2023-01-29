@@ -19,6 +19,7 @@ import DList from "./JSX/detailList";
 import Cart from "./Pages/cart";
 import CartCheckout from "./Pages/cart-checkout";
 import Payment from "./Pages/payment-details";
+import Status from "./Pages/order-status";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path={`${BaseUrl}/cart`} element={<Cart />} />
         <Route path={`${BaseUrl}/cart-checkout`} element={<CartCheckout />} />
         <Route path={`${BaseUrl}/payment-details`} element={<Payment />} />
+        <Route path={`${BaseUrl}/order-status`} element={<Status />} />
       </Routes>
     </main>
   );

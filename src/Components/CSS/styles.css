@@ -645,13 +645,6 @@ body {
   height: 49px;
   border-radius: 50px !important;
 }
-.the-pay {
-  background-color: #f6f7f9 !important;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 100vh;
-  width: 400px !important;
-}
 .pay-inp2 {
   width: 160px !important;
   height: 49px;
@@ -664,5 +657,31 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #222649;
+  }
+  .the-pay {
+    background-color: #f6f7f9 !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 100vh;
+  }
+  .key {
+    /* Donation ammount : */
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222649;
+    float: left;
+  }
+  .value {
+    /* Paragraph/P-02 */
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #707280;
+    margin-left: 40px;
   }
 }

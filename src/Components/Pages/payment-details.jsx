@@ -1,5 +1,6 @@
 import "../CSS/styles.css";
 import BackG from "../img/back-g.png";
+import NavBar from "../JSX/Navbar";
 
 function Payment() {
   return (
@@ -49,6 +50,20 @@ function Payment() {
             />
           </div>
         </div>
+        <fieldset className="mt-4">
+          <label htmlFor="account-number" className="ms-5 label form-label">
+            Account Number
+          </label>
+          <input
+            type="text"
+            id="account-number"
+            placeholder="Account Number"
+            className="form-control pay-inp d-block mx-auto"
+          />
+        </fieldset>
+        <p className="label ms-5 mt-3">Security Code</p>
+        <button className="btn checkout d-block mx-auto mb-2">Pay Now</button>
+        <NavBar />
       </section>
     </main>
   );
