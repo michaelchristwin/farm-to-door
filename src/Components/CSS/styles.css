@@ -672,16 +672,71 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #222649;
-    float: left;
   }
   .value {
-    /* Paragraph/P-02 */
     font-family: "Helvetica Neue";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 22px;
     color: #707280;
     margin-left: 40px;
+  }
+  .b-stat {
+    height: 38px;
+    background-color: #52a933 !important;
+    border-radius: 50px !important;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff !important;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .check {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+  .hline {
+    position: absolute;
+    margin-top: 27px;
+    margin-left: -15px;
+    z-index: 0;
+    height: 70px;
+  }
+  .pro-t {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #222649;
+  }
+  .other {
+    /* Your order #23456 was placed for delivery. */
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707280;
+  }
+  .o-time {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222649;
+  }
+  .img-ch {
+    margin-top: -2px;
   }
 }
