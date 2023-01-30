@@ -3,6 +3,7 @@ import "../CSS/styles.css";
 import Check from "../img/check.png";
 import NoCheck from "../img/nocheck.png";
 import Hline from "../img/hline.png";
+import NavBar from "../JSX/Navbar";
 
 function Status() {
   return (
@@ -11,7 +12,7 @@ function Status() {
         <img src={BackG} alt="Back" className="back-g" />
         <p className="cart-t mt-2 ms-2">Order Status</p>
       </div>
-      <section className="the-pay">
+      <section className="the-pay mb-5">
         <div className="px-4 pt-3 d-flex justify-content-between">
           <div className="d-block">
             <p className="key d-block">Pickup</p>
@@ -29,7 +30,7 @@ function Status() {
           <button className="btn b-stat">Process</button>
           <button className="btn b-stat">Track</button>
         </div>
-        <section className="mt-5">
+        <section className="my-5">
           <div className="d-flex">
             <span className="o-time text-nowrap float-left ms-4">9:30 AM</span>
             <div className="d-block ms-2 img-ch">
@@ -97,6 +98,7 @@ function Status() {
             </div>
           </div>
         </section>
+        <NavBar />
       </section>
     </main>
   );
