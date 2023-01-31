@@ -834,4 +834,24 @@ body {
     border-radius: 20px;
     color: white;
   }
+  .pumpkin-p {
+    width: 84px;
+    height: 97px;
+  }
+  .balloon {
+    width: 97px;
+    height: 97px;
+  }
+  .banana-o {
+    width: 91px;
+    height: 113px;
+  }
+  .lamp {
+    width: 60.65px;
+    height: 97px;
+  }
+  .choco {
+    width: 133px;
+    height: 97px;
+  }
 }
