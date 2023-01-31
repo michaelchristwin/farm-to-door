@@ -1,10 +1,19 @@
 import "../CSS/styles.css";
 import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
+import { useNavigate } from "react-router-dom";
+import Back from "../img/back-t.png";
 
 function ForgotPassword2() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <main>
+      <button onClick={goBack} className="back-btn ms-2 mt-3">
+        <img src={Back} alt="button" className="hello" />
+      </button>
       <p className="log-t px-2 mt-2">Verification Code</p>
       <span className="indi d-block px-2">
         We just sent you a verification code via a email elias2345@gmail.com.

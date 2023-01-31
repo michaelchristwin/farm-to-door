@@ -13,8 +13,13 @@ import Setting from "../img/setting.png";
 import "../CSS/styles.css";
 import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   const ToBuy = CartList.map((item) => {
     return (
       <CartItem
@@ -29,8 +34,10 @@ function Cart() {
   return (
     <main className="cart-g">
       <div className="d-flex px-3 py-4">
-        <img src={BackG} alt="Back" className="back-g" />
-        <p className="cart-t mt-2 ms-2">My Cart Details</p>
+        <button onClick={goBack} className="back-btn-g ms-2 mt-1">
+          <img src={BackG} alt="button" className="back-g" />
+        </button>
+        <p className="cart-t mt-3 ms-2">My Cart Details</p>
       </div>
       <section className="the-cart">
         <div className="d-flex justify-content-center pt-2">

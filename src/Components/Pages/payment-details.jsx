@@ -1,12 +1,19 @@
 import "../CSS/styles.css";
 import BackG from "../img/back-g.png";
 import NavBar from "../JSX/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function Payment() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <main className="cart-g d-block">
       <div className="d-flex px-3 py-4">
-        <img src={BackG} alt="Back" className="back-g" />
+        <button onClick={goBack} className="back-btn-g ms-2">
+          <img src={BackG} alt="button" className="back-g" />
+        </button>
         <p className="cart-t mt-2 ms-2">Payment Details</p>
       </div>
       <section className="the-pay">

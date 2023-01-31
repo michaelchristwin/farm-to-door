@@ -9,6 +9,7 @@ import Strawberry from "../img/strawberry.png";
 import Product from "../JSX/product";
 import { Row, Col } from "react-bootstrap";
 import Brocolli from "../img/brocolli.png";
+import { useNavigate } from "react-router-dom";
 
 function Details(props) {
   const [count, setCount] = useState(0);
@@ -17,6 +18,10 @@ function Details(props) {
       return prevCount + 1;
     });
   }
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   function Sub() {
     setCount((prevCount) => {
       return prevCount > 0 ? prevCount - 1 : 0;
@@ -33,7 +38,9 @@ function Details(props) {
         }
       >
         <div className="d-flex justify-content-between mt-2">
-          <img src={Back} alt="Back" className="back ms-3" />
+          <button onClick={goBack} className="back-btn ms-2 ">
+            <img src={Back} alt="button" className="hello" />
+          </button>
           <img src={Like} alt="Like" className="back me-3" />
         </div>
         <img src={props.img} alt="Product" className="orange-d d-block" />

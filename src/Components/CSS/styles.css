@@ -56,7 +56,7 @@
   height: 55px;
 }
 .logo-div {
-  justify-content: right;
+  justify-content: space-between;
 }
 #input {
   margin-left: auto;
@@ -97,7 +97,7 @@
   width: 320px;
   height: 54px;
   border-radius: 50px !important;
-  background-color: #dadbdb;
+  background-color: #fafcfe;
   margin-left: auto;
   margin-right: auto;
 }
@@ -888,5 +888,25 @@ body {
     align-items: center;
     text-align: center;
     color: #141735;
+  }
+  .back-btn {
+    border-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+    max-height: fit-content;
+    background-color: #f6f7f9;
+  }
+  .back-btn-g {
+    border-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+    max-height: fit-content;
+    background-color: #52a933;
+  }
+  .hello {
+    height: 44px;
+    width: 44px;
   }
 }

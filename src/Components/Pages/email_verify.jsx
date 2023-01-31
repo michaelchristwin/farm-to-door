@@ -1,10 +1,19 @@
 import "../CSS/styles.css";
 import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
+import { useNavigate } from "react-router-dom";
+import Back from "../img/back-t.png";
 
 function EmailVerify() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <main>
+      <button onClick={goBack} className="back-btn ms-2 mt-3">
+        <img src={Back} alt="button" className="hello" />
+      </button>
       <p className="log-t ms-4 mt-2">Verify your Email</p>
       <span className="indi d-block ms-4">
         Enter the 4-digit code we sent you.
@@ -20,7 +29,7 @@ function EmailVerify() {
         <p className="float-end resend">Resend Code</p>
       </div>
       <button className="btn mt-5 log-btn d-block">
-        <Link to={`${BaseUrl}/verify-email`}>Continue</Link>
+        <Link to={`${BaseUrl}/location`}>Continue</Link>
       </button>
     </main>
   );

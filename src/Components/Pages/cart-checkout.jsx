@@ -14,8 +14,13 @@ import { Link } from "react-router-dom";
 import BaseUrl from "../JSX/BaseUrl";
 import { useState } from "react";
 import MyVerticallyCenteredModal from "../JSX/MyModal";
+import { useNavigate } from "react-router-dom";
 
 function CartCheckout() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
   const [modalShow, setModalShow] = useState(false);
   const ToBuy = CartList.map((item) => {
     return (
@@ -31,8 +36,10 @@ function CartCheckout() {
   return (
     <main className="cart-g">
       <div className="d-flex px-3 py-4">
-        <img src={BackG} alt="Back" className="back-g" />
-        <p className="cart-t mt-2 ms-2">My Cart Details</p>
+        <button onClick={goBack} className="back-btn-g ms-2 mt-1">
+          <img src={BackG} alt="button" className="back-g" />
+        </button>
+        <p className="cart-t mt-3 ms-2">My Cart Details</p>
       </div>
       <section className="the-cart">
         <div className="d-flex justify-content-center pt-2">
