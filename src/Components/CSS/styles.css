@@ -818,4 +818,20 @@ body {
     width: 137px;
     height: 157px;
   }
+  .avail {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #52a933;
+    text-align: center;
+  }
+  .tomato-o {
+    width: 335px;
+    height: 180px;
+    background-color: #52a933;
+    border-radius: 20px;
+    color: white;
+  }
 }
