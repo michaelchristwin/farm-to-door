@@ -21,6 +21,7 @@ import CartCheckout from "./Pages/cart-checkout";
 import Payment from "./Pages/payment-details";
 import Status from "./Pages/order-status";
 import Tracking from "./Pages/tracking-map";
+import Offers from "./Pages/offers";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
         <Route path={`${BaseUrl}/payment-details`} element={<Payment />} />
         <Route path={`${BaseUrl}/order-status`} element={<Status />} />
         <Route path={`${BaseUrl}/tracking-map`} element={<Tracking />} />
+        <Route path={`${BaseUrl}/offers`} element={<Offers />} />
       </Routes>
     </main>
   );

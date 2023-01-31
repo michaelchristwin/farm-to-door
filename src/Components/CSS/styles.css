@@ -784,4 +784,38 @@ body {
     width: 50px;
     height: 50px;
   }
+  .b-friday {
+    width: 335px;
+    height: 180px;
+    background-color: #222649;
+    border-radius: 20px;
+    color: white;
+  }
+  .bf-text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+  .check-now {
+    /* Other colour/Secondary */
+    background: #fa9930 !important;
+    border-radius: 50px !important;
+    width: 115px;
+    height: 36px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff !important;
+  }
+  .pumpkin {
+    /* image */
+    width: 137px;
+    height: 157px;
+  }
 }
