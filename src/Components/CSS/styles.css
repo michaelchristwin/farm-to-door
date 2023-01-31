@@ -854,4 +854,39 @@ body {
     width: 133px;
     height: 97px;
   }
+  .tools {
+    width: 327px;
+    height: 60px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(234, 234, 234, 0.1);
+    border-radius: 10px;
+  }
+  .profile {
+    width: 40px;
+    height: 40px;
+  }
+  .tool-t {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #222649;
+  }
+  .in {
+    width: 7px;
+    height: 12px;
+  }
+  .user {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #141735;
+  }
 }
