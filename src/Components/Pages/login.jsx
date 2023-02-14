@@ -12,7 +12,7 @@ function Login() {
   };
   return (
     <main>
-      <div className="d-flex logo-div">
+      <div className="d-flex logo-div mt-3">
         <button onClick={goBack} className="back-btn ms-2">
           <img src={Back} alt="button" className="hello" />
         </button>
@@ -32,9 +32,10 @@ function Login() {
           id="input"
           placeholder="Password"
         />
-        <button className="btn mt-5 log-btn d-block">
-          <Link to={`${BaseUrl}/create-account`}>Login</Link>
-        </button>
+
+        <Link to={`${BaseUrl}/create-account`}>
+          <button className="btn mt-5 log-btn d-block">Login </button>
+        </Link>
       </div>
     </main>
   );

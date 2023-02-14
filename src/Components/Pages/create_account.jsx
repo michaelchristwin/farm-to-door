@@ -39,9 +39,9 @@ function CreateAcount() {
           id="input"
           placeholder="Confirm Password"
         />
-        <button className="btn mt-5 log-btn d-block">
-          <Link to={`${BaseUrl}/verify-email`}>Create Account</Link>
-        </button>
+        <Link to={`${BaseUrl}/verify-email`}>
+          <button className="btn mt-5 log-btn d-block">Create Account </button>
+        </Link>
       </div>
       <span className="d-block text-center my-4">or</span>
       <div className="google d-block p-2">

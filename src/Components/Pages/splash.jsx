@@ -4,7 +4,9 @@ import "../CSS/styles.css";
 function Splash() {
   return (
     <main>
-      <img src={FarmTo} alt="Logo" className="ftd d-flex mx-auto" />
+      <a href="/farm-to-door/onboarding1">
+        <img src={FarmTo} alt="Logo" className="ftd d-flex mx-auto" />
+      </a>
     </main>
   );
 }

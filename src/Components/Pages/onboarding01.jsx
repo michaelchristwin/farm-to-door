@@ -15,9 +15,9 @@ function Onboarding01() {
         <span className="d-block groc">
           groceries you desire delivered to you.
         </span>
-        <button className="btn mt-5 get">
-          <Link to={`${BaseUrl}/onboarding2`}>Get Started</Link>
-        </button>
+        <Link to={`${BaseUrl}/onboarding2`} className="mt-5">
+          <button className="btn  get">Get Started</button>
+        </Link>
       </div>
     </main>
   );

@@ -18,9 +18,9 @@ function Onboarding02() {
             <img className="d-block w-100" src={Pickup} alt="Second slide" />
           </Carousel.Item>
         </Carousel>
-        <button className="btn mt-5 get mx-auto">
-          <Link to={`${BaseUrl}/login`}>Got It</Link>
-        </button>
+        <Link to={`${BaseUrl}/login`} className="mx-auto">
+          <button className="btn mt-5 get mx-auto">Got It </button>
+        </Link>
       </div>
     </main>
   );

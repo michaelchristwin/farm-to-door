@@ -28,9 +28,9 @@ function EmailVerify() {
         <p className="float-start text-danger">Expired 00:59</p>
         <p className="float-end resend">Resend Code</p>
       </div>
-      <button className="btn mt-5 log-btn d-block">
-        <Link to={`${BaseUrl}/location`}>Continue</Link>
-      </button>
+      <Link to={`${BaseUrl}/location`}>
+        <button className="btn mt-5 log-btn d-block">Continue </button>
+      </Link>
     </main>
   );
 }

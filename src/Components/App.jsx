@@ -29,7 +29,7 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path={BaseUrl} element={<Splash />} />
+        <Route path={"/"} element={<Splash />} />
         <Route path={`${BaseUrl}/onboarding1`} element={<Onboarding01 />} />
         <Route path={`${BaseUrl}/onboarding2`} element={<Onboarding02 />} />
         <Route path={`${BaseUrl}/login`} element={<Login />} />
